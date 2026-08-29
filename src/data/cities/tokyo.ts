@@ -5,19 +5,20 @@ export const tokyo: CityContent = {
     id: "tokyo",
     name: "טוקיו",
     generalInfo:
-      "טוקיו, ששמה פירושו \"הבירה המזרחית\", נקראה עד 1868 אדו והייתה מרכז השלטון של השוגונים; רק כשהקיסר עבר לגור בה היא הוסבה לבירת יפן ושונה שמה. במקום מרכז עירוני צפוף אחד, טוקיו היא פסיפס של עשרות שכונות ומחוזות שכל אחד מהם מתפקד כמעין עיר בפני עצמה, עם תחנת רכבת, רחוב קניות ואופי משלו - שיבויה השוקקת, אסאקוסה העתיקה, אקיהברה הגיקית, גינזה היוקרתית. הייחוד של העיר הוא בשכבות: מקדשים בני מאות שנים ממש לצד גורדי שחקים ואמנות דיגיטלית עתידנית, הכול מחובר ברשת רכבות תחתיות ופרברים ענפה מהגדולות בעולם.",
+      "טוקיו אינה עיר אחת אלא פסיפס של עשרות מרכזים עירוניים - שינג'וקו, שיבויה, אסאקוסה, גינזה - שכל אחד מהם התפתח סביב תחנת רכבת משלו ושומר על אופי נפרד משלו, ללא מרכז היסטורי יחיד כמו בקיוטו. שמה פירושו 'בירת המזרח', והוא ניתן לה ב-1868 כשהקיסר העביר אליה את מושבו מקיוטו ושינה את שמה מאדו. שילוב הרכבות והמטרו הצפוף ביותר בעולם מאפשר לנוע בין הרבעים השונים במהירות, כך שלמרות הגודל העצום העיר נגישה להפליא ברגל ובתחבורה ציבורית. הניגוד בין גורדי שחקים מודרניים למקדשים ולסמטאות ישנות שרדו את רעידת האדמה של 1923 ואת הפצצות 1945 הוא חלק בלתי נפרד מהחוויה.",
   },
   places: [
     // Attractions
     {
-      id: "sensoji",
+      id: "sensoji-temple",
       cityId: "tokyo",
       category: "attraction",
       name: "סנסו-ג'י",
-      nameLatin: "Sensoji Temple",
+      nameLatin: "Senso-ji Temple",
       description:
-        "המקדש הבודהיסטי העתיק בטוקיו, שמקורו לפי המסורת בשנת 628 בפסל קאנון שדייגים מצאו ברשתם בנהר סומידה. שער קמינרימון האדום ורחוב הקניות ההיסטורי נאקאמיסה-דורי המוביל אליו הופכים אותו לאחת מנקודות העניין המרכזיות ביפן, עם כשלושים מיליון מבקרים בשנה.",
-      sources: ["https://www.senso-ji.jp/english/", "https://www.japan-guide.com/e/e3001.html"],
+        "מקדש בודהיסטי שלפי המסורת נוסד ב-628 לספירה סביב פסל קאנון זעיר שנמצא ברשת דייגים בנהר סומידה, מה שהופך אותו למקדש העתיק ביותר בטוקיו. האולם הראשי הנוכחי נבנה מחדש ב-1958 לאחר שנהרס בהפצצות מלחמת העולם השנייה, ושער קמינרימון עם הפנס האדום הענק בכניסה מוביל לרחוב נקאמיסה הגדוש בדוכני מזכרות ומאכלי רחוב.",
+      infoUrl: "https://www.senso-ji.jp/english/",
+      sources: ["https://www.senso-ji.jp/english/", "https://www.gotokyo.org/en/spot/15/index.html"],
     },
     {
       id: "meiji-jingu",
@@ -26,21 +27,9 @@ export const tokyo: CityContent = {
       name: "מייג'י ג'ינגו",
       nameLatin: "Meiji Jingu Shrine",
       description:
-        "מקדש שינטו שהוקדש ב-1920 לקיסר מייג'י ולקיסרית שוקן, מוקף ביער נטוע של יותר ממאה אלף עצים שנתרמו מכל רחבי יפן. רוב המבנים נהרסו בהפצצות מלחמת העולם השנייה ונבנו מחדש ב-1958, ויוצרים כיום אי של שקט ירוק בלב שיבויה והראג'וקו.",
-      sources: ["https://www.meijijingu.or.jp/en/", "https://www.japan-guide.com/e/e3002.html"],
-    },
-    {
-      id: "teamlab-borderless",
-      cityId: "tokyo",
-      category: "attraction",
-      name: "טימלאב בורדרלס",
-      nameLatin: "teamLab Borderless (Azabudai Hills)",
-      description:
-        "מוזיאון אמנות דיגיטלית שנפתח מחדש בפברואר 2024 במתחם אזאבודאי הילס, אחרי שהמיקום המקורי באודייבה נסגר ב-2022. יותר משבעים וחמש יצירות אור ותנועה זורמות בין חדרים ללא מסלול קבוע או מפה, וניתן לשוטט ביניהן בחופשיות.",
-      sources: [
-        "https://www.teamlab.art/e/tokyo/",
-        "https://www.timeout.com/tokyo/news/confirmed-the-all-new-teamlab-borderless-is-opening-in-azabudai-hills-on-february-9-122123",
-      ],
+        "מקדש שינטו שהושלם ב-1920 לזכר הקיסר מייג'י ואשתו הקיסרית שוקן, שהובילו את מודרניזציית יפן במאה ה-19. יער עירוני בן כ-100,000 עצים שנתרמו מכל רחבי יפן וניטעו סביב המקדש הופך אותו לאי ירוק ושקט בלב שיבויה ההומה, והמבנה המקורי - שנהרס בהפצצות 1945 - שוחזר ב-1958.",
+      infoUrl: "https://www.meijijingu.or.jp/en/",
+      sources: ["https://www.meijijingu.or.jp/en/about/establishment/"],
     },
     {
       id: "tokyo-skytree",
@@ -49,8 +38,20 @@ export const tokyo: CityContent = {
       name: "טוקיו סקייטרי",
       nameLatin: "Tokyo Skytree",
       description:
-        "מגדל השידור הגבוה בעולם, בגובה 634 מטר, שנפתח ב-2012 מעל שכונת אסאקוסה. שני מרפסות תצפית - אחת ב-350 מטר ואחת ב-450 מטר עם מעבר זכוכית שקוף - מציעות תצפית של כשבעים קילומטרים סביב, ובימים בהירים ניתן לראות את הר פוג'י.",
-      sources: ["https://en.tokyo-skytree.jp/about/spec/", "https://www.gotokyo.org/en/spot/6/index.html"],
+        "מגדל שידור שנפתח ב-22 במאי 2012 בגובה 634 מטרים, מה שהופך אותו למבנה הגבוה ביותר ביפן ולשני בגובהו בעולם בעת פתיחתו. שני מדפי תצפית - האחד בגובה 350 מטר והשני בגובה 450 מטר עם מסדרון זכוכית מסתובב - מציעים נוף פתוח על מזרח טוקיו ועד הרי פוג'י בימים בהירים.",
+      infoUrl: "https://en.tokyo-skytree.jp/",
+      sources: ["https://en.tokyo-skytree.jp/about/", "https://www.japan.travel/en/spot/1680/"],
+    },
+    {
+      id: "tokyo-national-museum",
+      cityId: "tokyo",
+      category: "attraction",
+      name: "המוזיאון הלאומי של טוקיו",
+      nameLatin: "Tokyo National Museum",
+      description:
+        "מוזיאון האמנות שהוקם ב-1872 ונחשב למוזיאון הלאומי הוותיק והגדול ביותר ביפן, עם אוסף של כ-120,000 פריטים כולל אוצרות לאומיים ורכוש תרבותי חשוב. אולם הונקאן המרכזי, שנבנה ב-1938 בסגנון אדריכלי המשלב אלמנטים יפניים ומערביים, מציג את התפתחות האמנות היפנית מהתקופה הפרהיסטורית ועד סוף המאה ה-19.",
+      infoUrl: "https://www.japan-guide.com/e/e3054_tokyo.html",
+      sources: ["https://www.japan-guide.com/e/e3054_tokyo.html", "https://www.japan.travel/en/spot/663/"],
     },
 
     // Scenic
@@ -58,34 +59,37 @@ export const tokyo: CityContent = {
       id: "shibuya-crossing",
       cityId: "tokyo",
       category: "scenic",
-      name: "שיבויה קרוסינג",
+      name: "צומת שיבויה",
       nameLatin: "Shibuya Scramble Crossing",
       description:
-        "הצומת ההולכי-רגל העמוס בעולם, שקיבל את צורתו הנוכחית ב-1932 ליד יציאת האצ'יקו של תחנת שיבויה. באור ירוק אחד חוצים אותו עד כשלושת אלפים אנשים בבת אחת, מוקף במסכי ניאון ענקיים שהפכו אותו לסמל החזותי של טוקיו המודרנית.",
-      sources: ["https://www.japan.travel/en/spot/2177/", "https://www.gotokyo.org/en/spot/78/index.html"],
+        "הצומת ההולכי-רגל העמוס בעולם, שבו עד 3,000 אנשים חוצים בו-זמנית בכל מחזור רמזור ירוק ובין 250,000 ל-500,000 הולכי רגל עוברים בו מדי יום. מסכי ענק וניאונים מסביב הופכים אותו לאחד הסמלים החזותיים המזוהים ביותר עם טוקיו המודרנית, והנוף הטוב ביותר עליו הוא מקומות התצפית בקומות העליונות של הבניינים הסובבים.",
+      mapQuery: "Shibuya Scramble Crossing, Tokyo, Japan",
+      sources: ["https://en.wikipedia.org/wiki/Shibuya_Crossing", "https://www.japan.travel/en/spot/2177/"],
     },
     {
       id: "shinjuku-gyoen",
       cityId: "tokyo",
       category: "scenic",
-      name: "שינג'וקו גיואן",
+      name: "גן שינג'וקו גיואן",
       nameLatin: "Shinjuku Gyoen National Garden",
       description:
-        "גן לאומי בשטח של 58 הקטר שהושלם ב-1906 על אדמת אחוזה פרטית מתקופת אדו, ומשלב שלושה סגנונות גינון שונים - יפני מסורתי, צרפתי פורמלי ואנגלי נופי. פתוח כל יום מלבד שני, ומהווה מפלט ירוק שקט מהמולת שינג'וקו הסמוכה.",
-      sources: ["https://www.env.go.jp/garden/shinjukugyoen/english/1_intro/outline.html", "https://www.gotokyo.org/en/spot/75/index.html"],
+        "גן לאומי בן כ-58 הקטארים שהושלם ב-1906 על אדמות שהיו שייכות לפעם לבית האצולה נאיטו מתקופת אדו, ונחנך רשמית בנוכחות הקיסר מייג'י. הגן משלב שלושה סגנונות שונים זה לצד זה - גן פורמלי צרפתי, גן נופי אנגלי וגן יפני מסורתי עם בריכות ואיים - ומהווה מפלט ירוק ושקט במרכז שינג'וקו העסוק.",
+      infoUrl: "https://www.env.go.jp/garden/shinjukugyoen/english/1_intro/outline.html",
+      sources: ["https://www.env.go.jp/garden/shinjukugyoen/english/1_intro/history.html"],
     },
     {
-      id: "nakamise-dori",
+      id: "nakameguro-canal",
       cityId: "tokyo",
       category: "scenic",
-      name: "נאקאמיסה-דורי",
-      nameLatin: "Nakamise-dori",
+      name: "תעלת נאקאמגורו",
+      nameLatin: "Nakameguro (Meguro River canal)",
       description:
-        "רחוב קניות מסורתי באורך 250 מטר בין שער קמינרימון למקדש סנסו-ג'י, שראשיתו בתקופת אדו כשלרוכלים הותר להקים דוכנים עבור עולי הרגל למקדש. כשמונים ותשעה חנויות משני הצדדים מוכרות ממתקים, מזכרות ומלאכת יד יפנית באווירה של פסטיבל מתמיד.",
-      sources: ["https://www.asakusastation.com/nakamise-shopping-street-asakusa/"],
+        "טיילת לאורך נהר מגורו החוצה את שכונת נאקאמגורו האופנתית, עם קפטריות עצמאיות, חנויות עיצוב ובוטיקים לאורך שתי גדות התעלה. השכונה ידועה בעיקר בפריחת הדובדבן שמתרחשת בסוף מארס-תחילת אפריל, אך גם מחוץ לעונה זו זהו טיול נעים ורגוע הרחק מהמונים, במיוחד בשעות הבוקר המוקדמות.",
+      mapQuery: "Nakameguro Station, Meguro, Tokyo, Japan",
+      sources: ["https://savvytokyo.com/tokyo-on-foot-meguro-river-cherry-blossom-walk/", "https://www.japan.travel/en/spot/377/"],
     },
 
-    // Market
+    // Markets
     {
       id: "tsukiji-outer-market",
       cityId: "tokyo",
@@ -93,181 +97,200 @@ export const tokyo: CityContent = {
       name: "שוק צוקיג'י החיצוני",
       nameLatin: "Tsukiji Outer Market",
       description:
-        "שוק המזון החיצוני המשיך לפעול כרגיל גם אחרי שהשוק הסיטונאי הפנימי עבר לטויוסו ב-2018, וכולל כארבע מאות ושישים חנויות ודוכני אוכל. רוב העסקים פתוחים מוקדם בבוקר וסוגרים אחר הצהריים, וסגורים בימי ראשון ובחגי השנה החדשה.",
-      sources: ["https://www.tsukiji.or.jp/english/calendar/", "https://www.japan-guide.com/e/e3021.html"],
+        "השוק שהיה פעם השוק הציבורי הצמוד לשוק הדגים הגדול בעולם, שפעל בצוקיג'י במשך 83 שנה עד שהחלק הסיטונאי עבר לטויוסו באוקטובר 2018. השוק החיצוני עצמו, עם כ-450 חנויות ודוכני מזון רחוב, נשאר במקומו ופעיל כתמיד - סושי טרי, מאכלי ים צלויים ותה ירוק מוגשים בין הסמטאות הצרות עוד משעות הבוקר המוקדמות.",
+      infoUrl: "https://www.japan.travel/en/spot/1707/",
+      sources: ["https://www.japan.travel/en/spot/1707/", "https://www.japan-guide.com/e/e3021.html"],
+    },
+    {
+      id: "ameyoko-market",
+      cityId: "tokyo",
+      category: "market",
+      name: "שוק אמיוקו",
+      nameLatin: "Ameyoko (Ameya Yokocho)",
+      description:
+        "רחוב שוק באורך כ-500 מטר בין תחנות אואנו ואוקאצ'ימאצ'י, שצמח כשוק שחור מיד לאחר מלחמת העולם השנייה סביב תחנת אואנו ההרוסה, כאשר חיילים משוחררים מכרו כל מה שיכלו להשיג. השם מתקשר הן למילה 'ame' (ממתקים, בזכות מאות חנויות הממתקים הראשונות) והן ל'אמריקה', מקור סחורות הצבא ששלטו בשוק בתחילת דרכו - כיום זהו רחוב קניות תוסס עם דוכני מאכלי ים, בגדים וממתקים במחירים נמוכים.",
+      sources: ["https://www.mlit.go.jp/tagengo-db/en/R1-00098.html", "https://www.japan-experience.com/all-about-japan/tokyo/markets-in-japan/ameyayokocho-tokyos-vibrant-market-street"],
     },
 
     // Special
     {
-      id: "akihabara",
+      id: "teamlab-planets",
       cityId: "tokyo",
       category: "special",
-      name: "אקיהברה",
-      nameLatin: "Akihabara Electric Town",
+      name: "טימלאב פלאנטס טוקיו",
+      nameLatin: "teamLab Planets TOKYO",
       description:
-        "שכונה שהחלה כשוק שחור לחלקי רדיו אחרי מלחמת העולם השנייה והתפתחה ל\"עיר החשמל\" הגדולה בעולם, ומאז שנות התשעים גם למרכז תרבות האוטאקו - אנימה, מנגה ומשחקים. חנויות ענק כמו יודובאשי אקיבה לצד מנדרייק וחנויות פיגורות הופכות אותה לחוויה שאין דומה לה בשאר יפן.",
-      sources: ["https://www.gotokyo.org/en/destinations/eastern-tokyo/akihabara/index.html"],
+        "מוזיאון אמנות דיגיטלית שבו הולכים יחפים במים רדודים ומטפסים דרך חדרי השתקפויות אינסופיים, פרחים דיגיטליים ומיצגי אור אינטראקטיביים התגובים לתנועת המבקרים. באנואר 2025 הורחב האתר בשטח נוסף בשם 'Forest' עם עשרות יצירות חדשות, וכניסה מחייבת הזמנת כרטיס מראש לתאריך ושעה מוגדרים, מכיוון שכרטיסים נוטים להיגמר שבועות מראש.",
+      infoUrl: "https://www.teamlab.art/e/planets/",
+      sources: ["https://www.teamlab.art/e/planets/", "https://www.tripadvisor.com/Attraction_Review-g14134359-d14951238-Reviews-TeamLab_Planets_TOKYO-Toyosu_Koto_Tokyo_Tokyo_Prefecture_Kanto.html"],
     },
     {
       id: "golden-gai",
       cityId: "tokyo",
       category: "special",
-      name: "גולדן גיי",
+      name: "גולדן גאי",
       nameLatin: "Shinjuku Golden Gai",
       description:
-        "רשת סמטאות בשינג'וקו עם כמאתיים שמונים ברים זעירים, כל אחד מכיל בקושי חמישה-שישה סועדים, ששרדה מתקופת אחרי המלחמה ושמרה על אווירה נוסטלגית שמשכה סופרים ואמנים לאורך העשורים. חלק מהברים מיועדים לקבועים בלבד, כדאי לחפש שלטים שמסבירים תיירים מוזמנים.",
-      sources: ["https://www.gotokyo.org/en/spot/62/index.html", "https://tokyocheapo.com/food-and-drink/quick-guide-golden-gai/"],
+        "רשת של שש סמטאות צרות בשינג'וקו שצמחה כשוק שחור אחרי מלחמת העולם השנייה והפכה בשנות ה-60 למקום מפגש של סופרים, אמנים ובוהמיינים. כ-200 בארים זעירים, שכל אחד מהם מכיל לרוב 5-12 סועדים בלבד ולכל אחד אופי, נושא ובעל בית משלו, עדיין פועלים שם - כל בר הוא עולם קטן בפני עצמו, ולא כולם פתוחים לתיירים באופן שווה.",
+      mapQuery: "Shinjuku Golden Gai, Tokyo, Japan",
+      sources: ["https://en.wikipedia.org/wiki/Shinjuku_Golden_Gai", "https://www.gotokyo.org/en/spot/62/index.html"],
     },
     {
-      id: "omoide-yokocho",
+      id: "arashio-sumo-stable",
       cityId: "tokyo",
       category: "special",
-      name: "אומוידה יוקוצ'ו",
-      nameLatin: "Omoide Yokocho (Memory Lane)",
+      name: "אימון בוקר בחדר סומו אראשיו",
+      nameLatin: "Arashio Stable (Arashio-beya) morning practice",
       description:
-        "מבוך סמטאות צר ליד היציאה המערבית של תחנת שינג'וקו שנוצר מדוכני אוכל בלתי-פורמליים אחרי מלחמת העולם השנייה. כשמונים בתי עסק זעירים מגישים שיפודי יאקיטורי ומעדני פנים בעמידה או ישיבה צפופה, תחת שורות פנסים אדומים שנותנות לרחוב את הכינוי \"שדרת הזיכרונות\".",
-      sources: ["https://www.byfood.com/blog/shinjuku-omoide-yokocho-p-832", "https://tokyobecky.com/everything-you-need-to-know-about-omoide-yokocho-piss-alley-in-shinjuku/"],
+        "חדר אימונים (heya) של מתאבקי סומו מקצועיים בנשוני-בשי, המאפשר צפייה חופשית וללא הזמנה באימוני הבוקר דרך חלונות ראווה גדולים הפונים לרחוב. האימונים מתקיימים בדרך כלל בין 7:30 ל-10:00 ברוב הימים מלבד בתקופות טורניר, ומומלץ להגיע כבר ב-6:45 כדי לתפוס מקום טוב - אסור לצלם בפלאש, לדבר בקול או להפריע למתאמנים.",
+      mapQuery: "Arashio Stable, 2-47-2 Nihonbashi Hamacho, Chuo, Tokyo, Japan",
+      sources: ["https://tokyocheapo.com/entertainment/sport/morning-sumo-practice/", "https://ryogokukokugikan.com/morning-practice-guide"],
     },
 
-    // Restaurants / Cafes
+    // Restaurants / cafes
     {
-      id: "fuunji",
+      id: "cafe-de-lambre",
       cityId: "tokyo",
       category: "restaurant",
-      name: "פוּאונג'י",
-      nameLatin: "Fuunji Shinjuku",
+      name: "קפה דה ל'אמבר",
+      nameLatin: "Cafe de l'Ambre",
       description:
-        "חנות טסוקמן (ראמן טבילה) חמישה דקות הליכה מתחנת מינמי-שינג'וקו, שנבחרה כאחת ממאה המסעדות המובילות בטבלוג מדי שנה בין 2017 ל-2020. הרוטב מבושל 38 שעות מעוף ודגים, וההזמנה נעשית עוד בתור לפני הכניסה כדי לזרז את התחלופה.",
+        "בית קפה ותיק בגינזה שנפתח ב-1948, כשמייסדו איצ'ירו סקיגוצ'י רכש מלאי פולי קפה סומטרה בני עשר שנים שנתקעו ביפן בגלל המלחמה - וגילה שההזדקנות משפרת את הטעם. כיום מוצעים למעלה משלושים סוגי פולים בודדים, חלקם מיושנים 10-20 שנה, בבית קפה שכמעט לא השתנה מאז שנות ה-50.",
+      infoUrl: "https://tabelog.com/en/tokyo/A1301/A130103/13002564/",
+      sources: [
+        "https://tabelog.com/en/tokyo/A1301/A130103/13002564/",
+        "https://www.tripadvisor.com/Restaurant_Review-g14129573-d1689274-Reviews-Cafe_de_Lambre-Ginza_Chuo_Tokyo_Tokyo_Prefecture_Kanto.html",
+      ],
+    },
+    {
+      id: "blue-bottle-kiyosumi",
+      cityId: "tokyo",
+      category: "restaurant",
+      name: "בלו בוטל קופי קיוסומי-שיראקאווה",
+      nameLatin: "Blue Bottle Coffee Kiyosumi-Shirakawa",
+      description:
+        "בית הקפה הראשון של רשת בלו בוטל מחוץ לארצות הברית, שנפתח ב-6 בפברואר 2015 במחסן מוסב בשכונת קיוסומי-שיראקאווה - אזור תעשייתי לשעבר שתזכיר את ברוקלין הזכירה למייסדי הרשת. הסניף כולל בית קלייה מלא, ומאז נחשב לאחד ממוקדי תרבות הקפה הגל-השלישי בטוקיו.",
+      infoUrl: "https://tabelog.com/en/tokyo/A1313/A131303/13177218/",
+      sources: [
+        "https://tabelog.com/en/tokyo/A1313/A131303/13177218/",
+        "https://www.archdaily.com/618361/blue-bottle-coffee-kiyosumi-shirakawa-roastery-and-cafe-schemata-architects",
+      ],
+    },
+    {
+      id: "onigiri-bongo",
+      cityId: "tokyo",
+      category: "restaurant",
+      name: "אוניגירי בונגו",
+      nameLatin: "Onigiri Bongo",
+      description:
+        "חנות אוניגירי (כדורי אורז) הפועלת מאז 1960 ליד תחנת אוצוקה, עם למעלה מ-50 סוגי מילויים - מהקלאסיים כמו שזיף אומה וסלמון ועד שילובים יצירתיים כמו קארי ובקר. עוברת ל-1,500 אוניגירי ביום ומדורגת במדריך מישלן טוקיו, כך שתור ארוך הוא כמעט מובטח; המקום עבר מיקום קרוב ב-2022 אך נשאר באותו רובע.",
+      sources: [
+        "https://tabelog.com/en/tokyo/A1323/A132302/13276342/",
+        "https://www.tripadvisor.com/Restaurant_Review-g1066460-d1689601-Reviews-Bongo-Toshima_Tokyo_Tokyo_Prefecture_Kanto.html",
+      ],
+    },
+    {
+      id: "sarutahiko-coffee-ebisu",
+      cityId: "tokyo",
+      category: "restaurant",
+      name: "סארוטהיקו קופי אביסו",
+      nameLatin: "Sarutahiko Coffee Ebisu Honten",
+      description:
+        "בית קפה ותיק לקפה איכותי שנוסד ב-2011 ליד תחנת אביסו על ידי שחקן לשעבר שעזב את עולם הבידור ומצא נחמה בהכנת קפה. מתמחה בהגשת פור-אובר של פולי מקור בודד, בסגנון שמעניק כבוד רב לתהליך החליטה, ולמרות ההתרחבות לסניפים נוספים עדיין שומר על אווירה משפחתית וקטנה.",
+      infoUrl: "https://sarutahiko.co/en/",
+      sources: [
+        "https://tabelog.com/en/tokyo/A1303/A130302/13127577/",
+        "https://sarutahiko.co/en/about/",
+      ],
+    },
+    {
+      id: "ichiran-shibuya",
+      cityId: "tokyo",
+      category: "restaurant",
+      name: "איצ'יראן שיבויה",
+      nameLatin: "Ichiran Ramen Shibuya",
+      description:
+        "רשת ראמן טונקוצו שהחלה כדוכן קטן בפוקואוקה ב-1960 והפכה מפורסמת ב-1993 עם 'תא ריכוז הטעם' - עמדות אכילה מחולקות במחיצות המיועדות לחוויית ראמן סולו ללא הסחות דעת. הזמנה מתבצעת בעמדה אוטומטית ואפשר להתאים את עוצמת הטעם, כמות השום והתבלינים בטופס לפני הישיבה, מה שהופך אותו לאופציה נוחה במיוחד למטייל לבד.",
+      mapQuery: "Ichiran Ramen Shibuya, Tokyo, Japan",
+      sources: [
+        "https://tabelog.com/en/tokyo/A1303/A130301/13001762/",
+        "https://www.tripadvisor.com/Restaurant_Review-g1066456-d1688898-Reviews-Ichiran_Shibuya-Shibuya_Tokyo_Tokyo_Prefecture_Kanto.html",
+      ],
+    },
+    {
+      id: "tonkatsu-maisen-aoyama",
+      cityId: "tokyo",
+      category: "restaurant",
+      name: "טונקצו מאיסן אויאמה",
+      nameLatin: "Tonkatsu Maisen Aoyama Honten",
+      description:
+        "מסעדת טונקצו הפועלת מאז 1965 בתוך בית מרחץ ציבורי (סנטו) משופץ משנות ה-20 או ה-30, עם תקרות גבוהות וקורות עץ חשופות ששרדו מהמבנה המקורי. מפורסמת בעיקר בכריך הירֶה-קצו (פילה חזיר פריך) שהפך למנת דגל של הרשת, ותור ניכר נוצר כבר דקות לפני הפתיחה.",
+      sources: [
+        "https://tabelog.com/en/tokyo/A1306/A130602/13001850/",
+        "https://theondo.net/tokyo/spots/maisen-aoyama/",
+      ],
+    },
+    {
+      id: "fuunji-shinjuku",
+      cityId: "tokyo",
+      category: "restaurant",
+      name: "פואונג'י שינג'וקו",
+      nameLatin: "Fuunji Shinjuku Honten",
+      description:
+        "מסעדת ראמן ותיקה משנת 2007 בשינג'וקו, שמזוהה עם צוקמן (אטריות טבולות) המבוסס על מרק כפול - עוף עשיר (טוריפאיטן) ומרק דגים עם קטסואובושי, סרדינים וקומבו. הבעלים הגיע מרקע של מטבח איטלקי ולא עבר הכשרה מסורתית בראמן, אך נחשב לאחד מהחלוצים שעיצבו את הצוקמן המודרני; המסעדה נסגרת בין 15:00 ל-17:00 להכנות.",
       sources: [
         "https://tabelog.com/en/tokyo/A1304/A130401/13044091/",
-        "https://www.ramenguidejapan.com/reviews/fuunji",
+        "https://danielfooddiary.com/2015/09/19/fuunji/",
       ],
     },
     {
-      id: "sushi-dai",
+      id: "tsunahachi-shinjuku",
       cityId: "tokyo",
       category: "restaurant",
-      name: "סושי דאי",
+      name: "צונאהאצ'י שינג'וקו",
+      nameLatin: "Tempura Shinjuku Tsunahachi Sohonten",
+      description:
+        "מסעדת טמפורה שהוקמה ב-1923 על ידי קיוזו שימורה, עם סניף הדגל בשינג'וקו שנפתח ב-1964, שנת האולימפיאדה הראשונה בטוקיו. הטמפורה מטוגנת בשמן שומשום טהור לפי מתכון שנשמר לאורך הדורות, וניתן לשבת בדלפק ולצפות בשפים עובדים או לבחור בחדרים פרטיים.",
+      sources: [
+        "https://tabelog.com/en/tokyo/A1304/A130401/13000859/",
+        "https://danielfooddiary.com/2017/04/15/tsunahachi/",
+      ],
+    },
+    {
+      id: "sushi-dai-toyosu",
+      cityId: "tokyo",
+      category: "restaurant",
+      name: "סושי דאי טויוסו",
       nameLatin: "Sushi Dai (Toyosu Market)",
       description:
-        "מסעדת סושי ותיקה בתוך שוק הדגים טויוסו, שעברה לשם ב-2018 יחד עם שאר השוק הסיטונאי מצוקיג'י. הסועדים נרשמים בכניסה וממתינים לתורם במקום לעמוד בתור, ומקבלים סט אומקסה של דגי עונה טריים כולל טונה שומנית, מול שפים שעובדים ממש מול העיניים.",
+        "מסעדת סושי בת יותר משלושים שנה שפעלה במקור בשוק צוקיג'י ועברה עם השוק הסיטונאי לטויוסו ב-2018, וזוכה בפרס ביב גורמן של מדריך מישלן מאז 2015. מגישה סט אומקאסה של שמונה חתיכות נגירי עונתיות - כולל טונה שמנה וקינמדאי - ליד דלפק של כ-15 מקומות ישיבה בלבד, כך שתור של שעתיים בבוקר המוקדם הוא נורמלי לגמרי.",
+      mapQuery: "Sushi Dai, Toyosu Market, Koto, Tokyo, Japan",
       sources: [
-        "https://tabelog.com/en/tokyo/A1313/A131307/13227096/dtlrvwlst/",
-        "https://www.ryoko-traveler.com/sushidai2025/",
-      ],
-    },
-    {
-      id: "afuri",
-      cityId: "tokyo",
-      category: "restaurant",
-      name: "אפורי",
-      nameLatin: "Afuri Ebisu",
-      description:
-        "רשת ראמן שהתפרסמה בזכות מרק היוזו-שיו הבהיר שלה - ציר עוף, פירות ים ואצות עם הדרים - חלופה קלה לראמן השומני המקובל. הסניף המקורי באביסו פועל עם מכונת הזמנה עצמאית בכניסה, ומחיר קערה נע סביב אלף יין בלבד.",
-      sources: [
-        "https://www.tripadvisor.com/Restaurant_Review-g14131018-d1663405-Reviews-Afuri_Ebisu-Ebisu_Shibuya_Tokyo_Tokyo_Prefecture_Kanto.html",
-        "https://tinyurbankitchen.com/afuri-ramen-tokyo-yuzu-shio-ramen-ebisu/",
-      ],
-    },
-    {
-      id: "kayaba-coffee",
-      cityId: "tokyo",
-      category: "restaurant",
-      name: "קאיאבה קופי",
-      nameLatin: "Kayaba Coffee",
-      description:
-        "בית קפה מסוג קיסאטן ותיק בבית מאצ'יה משנת 1916, פעל משנות השלושים ושופץ ב-2009 בידי חובבי המקום. חדר טטאמי בקומה העליונה, כריכי ביצה תוצרת בית ופודינג קפה וקרם הופכים אותו לעצירה נוסטלגית ברחוב יאנאקה גינזה השכונתי.",
-      sources: [
-        "https://www.tripadvisor.com/Restaurant_Review-g14134297-d1690094-Reviews-Kayaba_Coffee-Yanaka_Taito_Tokyo_Tokyo_Prefecture_Kanto.html",
-        "https://tabelog.com/en/tokyo/A1311/A131104/13019585/dtlrvwlst/",
-      ],
-    },
-    {
-      id: "onibus-coffee",
-      cityId: "tokyo",
-      category: "restaurant",
-      name: "אוניבוס קופי",
-      nameLatin: "Onibus Coffee Nakameguro",
-      description:
-        "בית קפה שקולה בעצמו את הפולים שלו, שוכן בבית עץ דו-קומתי סמוך למסילת רכבת בשכונת נקמגורו השקטה. הקומה העליונה מציעה נוף למסילה ולעוברים ושבים, ומגוון שיטות חליטה כולל פור-אובר, במקום ששילב ניסיון קפה ואווירת שכונה כאחד.",
-      sources: [
-        "https://tabelog.com/en/tokyo/A1317/A131701/13191293/dtlrvwlst/",
-        "https://www.tripadvisor.com/Restaurant_Review-g1066450-d12236287-Reviews-Onibus_Coffee_Nakameguro-Meguro_Tokyo_Tokyo_Prefecture_Kanto.html",
-      ],
-    },
-    {
-      id: "pelican-bakery",
-      cityId: "tokyo",
-      category: "restaurant",
-      name: "פליקן",
-      nameLatin: "Pelican Bakery / Pelican Cafe",
-      description:
-        "מאפייה שנוסדה ב-1942 ואופה רק שני סוגי לחם - שוקופאן לבן ורולים - בכמות מוגבלת שנגמרת לעיתים קרובות לפני שעת הסגירה. הקפה הצמוד לה מגיש כריכי פרי, טוסט חמאה עבה וסנדוויצ'י קציצת חזיר על אותו לחם, בשכונת אסאקוסאבאשי.",
-      sources: [
-        "https://tabelog.com/en/tokyo/A1311/A131102/13003662/dtlrvwlst/",
-        "https://www.theinfatuation.com/tokyo/reviews/pelican-caf",
-      ],
-    },
-    {
-      id: "monja-moheji",
-      cityId: "tokyo",
-      category: "restaurant",
-      name: "מונג'ה מוהג'י",
-      nameLatin: "Tsukishima Monja Moheji",
-      description:
-        "מסעדת מונג'איאקי ברחוב מונג'ה המפורסם של צוקישימה, שבו כשמונים בתי עסק המתמחים במאכל הטיגון הנוזלי הזה. בניגוד לרוב המקומות שבהם הסועדים מבשלים בעצמם על פלטת הברזל, כאן הצוות מכין את המנה עבורם, כולל גרסה עם מנטאיקו ופסת אורז דבוקה.",
-      sources: [
-        "https://www.tripadvisor.com/Restaurant_Review-g14129637-d12096705-Reviews-Tsukishima_Monja_Moheji-Tsukishima_Chuo_Tokyo_Tokyo_Prefecture_Kanto.html",
-        "https://blog.japanwondertravel.com/best-restaurants-in-tsukishima-monjayaki-town-62420",
-      ],
-    },
-    {
-      id: "kanda-matsuya",
-      cityId: "tokyo",
-      category: "restaurant",
-      name: "קנדה מאצויה",
-      nameLatin: "Kanda Matsuya",
-      description:
-        "מסעדת סובה ותיקה שנוסדה ב-1884, נשרפה ברעידת האדמה הגדולה של קנטו ונבנתה מחדש ב-1924 במבנה עץ מתקופת טאישו שהוכר כאתר היסטורי. אטריות הכוסמת מיוצרות ביד מקמח הוקאידו ואיברקי מאז 1958, והמנה המבוקשת היא סובה עם טמפורה של שרימפס.",
-      sources: [
-        "https://www.tokyoupdates.metro.tokyo.lg.jp/en/post-500/",
-        "https://trulytokyo.com/kanda-matsuya/",
-      ],
-    },
-    {
-      id: "tonkatsu-maisen",
-      cityId: "tokyo",
-      category: "restaurant",
-      name: "טונקצו מאיסן",
-      nameLatin: "Tonkatsu Maisen Aoyama",
-      description:
-        "מסעדת טונקצו שפועלת מאז 1965 בתוך בית מרחץ ציבורי לשעבר בשכונת אויאמה, עם תקרות גבוהות ופרטי עץ ששרדו מהתקופה ההיא. חתיכת חזיר שחור מטוגנת שנחשבת בין הטובות בעיר מוגשת בחדר האוכל המרווח, מלא מקומיים בצהריים ובתיירים בערב.",
-      sources: [
-        "https://trulytokyo.com/maisen/",
-        "https://thecitylane.com/tonkatsu-maisen-aoyama-honten/",
+        "https://tabelog.com/en/tokyo/A1313/A131307/13227096/",
+        "https://www.tripadvisor.com/Restaurant_Review-g14134359-d15220826-Reviews-Sushi_Dai-Toyosu_Koto_Tokyo_Tokyo_Prefecture_Kanto.html",
       ],
     },
   ],
   warnings: [
     {
-      id: "tokyo-warning-transport",
+      id: "tokyo-warning-ic-card",
       cityId: "tokyo",
-      text: "טוקיו מחולקת בין כמה מפעילי רכבת נפרדים - JR, טוקיו מטרו וטואי - עם מערכות כרטוס שונות: קנו כרטיס IC כמו סוייקה או פאסמו בכניסה לתחנה ראשונה והשתמשו בו על פני כל הרשתות במקום לנסות לחשב כרטיסים בודדים.",
+      text: "טענו כרטיס IC (סוייקה או פסמו) מספיק מראש - רוב הרכבות, האוטובוסים וגם חנויות נוחות ואוטומטים סורקים אותו, וזה חוסך תור בקופות ובלבול עם מכונות כרטוס מרובות-אזורים בכל תחנה.",
     },
     {
-      id: "tokyo-warning-rush-hour",
+      id: "tokyo-warning-train-etiquette",
       cityId: "tokyo",
-      text: "קרונות הרכבת בשעות העומס בבוקר ובערב מתמלאים עד דחיסות קיצונית: הימנעו מנסיעה בין 7:30 ל-9:00 אם אפשר, ואם לא, שמרו על תיקים צמודים לגוף, אל תדברו בטלפון בקול רם ופנו מקום לנוסעים בקרונות נשים-בלבד בזמנים המסומנים.",
+      text: "ברכבות ובמטרו נהוג לשתוק, לכבות צלצול טלפון (מצב 'מאנר') ולא לדבר בו, ולא לאכול חוץ מקווי רכבת ארוכי טווח - שמרו על תיק גב קדימה בשעות עומס כדי לא לדחוק אחרים.",
     },
     {
-      id: "tokyo-warning-touts",
+      id: "tokyo-warning-typhoon",
       cityId: "tokyo",
-      text: "באזורי בילוי כמו קבוקיצ'ו ורופונגי מסתובבים \"קיאקוהיקי\" - מגייסים רחוב שמפתים בשתייה זולה או הצעות מיוחדות ומובילים לברים שגובים חשבונות מנופחים בסכומי ענק: אל תלכו אחרי אף אחד שפונה אליכם ברחוב, בחרו מקומות מראש.",
+      text: "סוף ספטמבר עד אמצע אוקטובר הוא עדיין בתוך עונת הטייפונים ביפן - עקבו אחר תחזית מזג האוויר וכל הודעה על שיבושי רכבות (JR ומטרו לעיתים עוצרים שירות מראש כשטייפון מתקרב), והשאירו יום גמיש בלוח הזמנים אם אפשר.",
     },
     {
       id: "tokyo-warning-earthquake",
       cityId: "tokyo",
-      text: "יפן נמצאת באזור פעילות סייסמית גבוהה ורעידות אדמה קלות מורגשות מדי פעם בטוקיו: הורידו מראש את אפליקציית Safety Tips של רשות התיירות היפנית, שמספקת התרעות רב-לשוניות על רעידות אדמה, טייפונים והוראות פינוי.",
+      text: "רעידות אדמה קלות שכיחות ביפן ולרוב אינן מורגשות משמעותית, אך כדאי לדעת מראש: בזמן רעידה חזקה יש להתרחק מחלונות וארונות, לא לרוץ החוצה מיד, ולעקוב אחרי הודעות חירום באפליקציית Safety Tips של ה-JNTO שמתריעה גם באנגלית.",
     },
   ],
   phrases: [],
