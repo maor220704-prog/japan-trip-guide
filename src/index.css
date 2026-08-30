@@ -30,29 +30,29 @@
 @theme {
   --font-sans: "Assistant", system-ui, sans-serif;
 
-  --color-primary: #47664b;
-  --color-primary-container: #86a789;
+  --color-primary: #8e2de2;
+  --color-primary-container: #c6a6f0;
   --color-on-primary: #ffffff;
-  --color-on-primary-container: #1f3c25;
+  --color-on-primary-container: #35145c;
 
-  --color-secondary: #53634d;
-  --color-secondary-container: #d4e5ca;
-  --color-on-secondary-container: #586751;
+  --color-secondary: #5b4b72;
+  --color-secondary-container: #ede6fa;
+  --color-on-secondary-container: #4a3b66;
 
-  --color-tertiary: #9d422c;
-  --color-tertiary-container: #ed8065;
-  --color-on-tertiary-container: #661b08;
+  --color-tertiary: #b8791f;
+  --color-tertiary-container: #eac873;
+  --color-on-tertiary-container: #5c3d0a;
 
-  --color-background: #faf9f4;
-  --color-surface: #faf9f4;
-  --color-surface-container: #efeee9;
-  --color-surface-container-low: #f5f4ef;
-  --color-surface-container-high: #e9e8e3;
+  --color-background: #faf8fd;
+  --color-surface: #faf8fd;
+  --color-surface-container: #f0e9fa;
+  --color-surface-container-low: #f6f1fc;
+  --color-surface-container-high: #e7dcf7;
 
-  --color-on-surface: #1b1c19;
-  --color-on-surface-variant: #424842;
-  --color-outline: #737971;
-  --color-outline-variant: #c2c8bf;
+  --color-on-surface: #1e1526;
+  --color-on-surface-variant: #4a4152;
+  --color-outline: #8a7f94;
+  --color-outline-variant: #d9cce8;
 
   --color-error: #ba1a1a;
   --color-error-container: #ffdad6;
