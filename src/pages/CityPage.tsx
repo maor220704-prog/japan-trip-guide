@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { cities } from "../data/cities";
 import { placesByCity, warningsByCity } from "../data/cities/index";
@@ -62,6 +62,12 @@ export default function CityPage() {
     : availableSections[0]?.key ?? null;
 
   const current = availableSections.find((s) => s.key === currentTab);
+
+  // Switching tabs should show the new list from its top, not wherever the
+  // page happened to be scrolled to in the previous tab.
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [currentTab]);
 
   if (!city) {
     return (

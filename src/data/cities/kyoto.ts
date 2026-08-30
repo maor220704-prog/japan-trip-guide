@@ -1,5 +1,4 @@
 import type { CityContent } from "../../types";
-import cityImg from "../../assets/images/kyoto.webp";
 import fushimiInariImg from "../../assets/images/kyoto-fushimi-inari-taisha.webp";
 import kinkakujiImg from "../../assets/images/kyoto-kinkaku-ji.webp";
 import kiyomizuImg from "../../assets/images/kyoto-kiyomizu-dera.webp";
@@ -16,7 +15,7 @@ export const kyoto: CityContent = {
     name: "קיוטו",
     generalInfo:
       "קיוטו פרושה בעמק שטוח החסום בהרים משלושה צדדים, עם רשת רחובות מלבנית שהועתקה מהעיר הסינית צ'אנגאן כבר בסוף המאה ה-8 - ומכאן גם שמה, שפירושו המילולי 'עיר הבירה'. היא שימשה בירתה הקיסרית של יפן ברציפות מ-794 עד 1868, ולכן מרוכזים בה יותר מ-1,600 מקדשים בודהיסטים ומאות מקדשי שינטו, לצד רבעי גיישות היסטוריים ששרדו כמעט ללא פגע גם בהפצצות מלחמת העולם השנייה. הייחוד שלה הוא השילוב הנדיר בין עיר מודרנית פועמת לבין מרקם עתיק שנשמר בכוונה תחילה.",
-    image: cityImg,
+    image: kinkakujiImg,
   },
   places: [
     // Attractions
