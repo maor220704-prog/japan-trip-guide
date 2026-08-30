@@ -307,9 +307,9 @@ body {
 /*
  * Active-state styling for the city-page category tabs (CityPage.tsx). A
  * recolor of a UIverse.io "radio-inputs" component (00Kubi) from its
- * default blue to this app's green tokens: a light gradient fill (instead
+ * default blue to this app's brand tokens: a light gradient fill (instead
  * of the source's dark blue-on-light-page gradient, inverted here because
- * these chips sit on the app's dark-green sticky header - see the header's
+ * these chips sit on the app's dark sticky header - see the header's
  * own `bg-primary` class in CityPage.tsx) plus a soft, quiet lift. Only
  * paint properties (background/box-shadow) - no size or spacing changes -
  * so it cannot disturb the two-row chip wrap at 375px (design.md section 5).
@@ -319,11 +319,13 @@ body {
  * badge rather than the calm, professional guide design.md asks for. Now a
  * single soft shadow at roughly half the previous opacity/blur, and no
  * scale - so the active chip reads as "gently highlighted", not "lit up".
+ * (Shadow color updated to the palette's ink tone when the app switched
+ * from green to purple - it was still a hardcoded green until then.)
  */
 .tab-chip-active {
   background: linear-gradient(145deg, var(--color-on-primary), var(--color-secondary-container));
   color: var(--color-primary);
-  box-shadow: 0 1px 4px rgba(31, 60, 37, 0.18);
+  box-shadow: 0 1px 4px rgba(30, 21, 38, 0.18);
 }
 
 /*
@@ -536,7 +538,7 @@ body {
 
 /*
  * Packing-list per-city card (ported from a UIverse.io gradient-border
- * card, recolored to the app's green tokens and stripped of its fixed
+ * card, recolored to the app's brand tokens and stripped of its fixed
  * width/height so it flows with real, variable-length content instead of
  * a hardcoded 190x254 box).
  */
@@ -549,7 +551,7 @@ body {
     var(--color-primary-container) 55%,
     var(--color-secondary-container) 100%
   );
-  box-shadow: 0 12px 24px -10px rgba(31, 60, 37, 0.25);
+  box-shadow: 0 12px 24px -10px rgba(30, 21, 38, 0.25);
 }
 .packing-card__content {
   border-radius: 16px;
@@ -591,15 +593,15 @@ body {
 @keyframes packing-card-pop {
   0% {
     scale: 1;
-    box-shadow: 0 12px 24px -10px rgba(31, 60, 37, 0.25);
+    box-shadow: 0 12px 24px -10px rgba(30, 21, 38, 0.25);
   }
   40% {
     scale: 1.02;
-    box-shadow: 0 16px 30px -8px rgba(31, 60, 37, 0.35);
+    box-shadow: 0 16px 30px -8px rgba(30, 21, 38, 0.35);
   }
   100% {
     scale: 1;
-    box-shadow: 0 12px 24px -10px rgba(31, 60, 37, 0.25);
+    box-shadow: 0 12px 24px -10px rgba(30, 21, 38, 0.25);
   }
 }
 @media (prefers-reduced-motion: reduce) {
