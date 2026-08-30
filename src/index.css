@@ -257,6 +257,21 @@ body {
 }
 
 /*
+ * Hides the scrollbar on the city-page photo gallery strip
+ * (CityPhotoGallery.tsx) - it's a swipeable strip, not a document to scroll
+ * with a visible track, so the bar would only add visual noise. Scrolling
+ * itself stays fully functional (touch swipe, trackpad, drag) - only the
+ * bar's rendering is suppressed, in both scrollbar models browsers use.
+ */
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* old Edge */
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/new Edge */
+}
+
+/*
  * Opaque "elevated header" treatment (design.md, note dated 25/08/2026) -
  * the counterpart to .nav-glass above. These two sticky headers
  * (CityList.tsx, CityPage.tsx) have photo content scrolling underneath

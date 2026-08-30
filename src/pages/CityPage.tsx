@@ -5,7 +5,7 @@ import { placesByCity, warningsByCity } from "../data/cities/index";
 import { isCityId, type Category, type CityId } from "../types";
 import Icon from "../components/Icon";
 import PlaceCard from "../components/PlaceCard";
-import CityHeroCarousel from "../components/CityHeroCarousel";
+import CityPhotoGallery from "../components/CityPhotoGallery";
 
 type TabKey = "info" | "food" | "see" | "shop" | "special" | "warnings";
 
@@ -76,8 +76,6 @@ export default function CityPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <CityHeroCarousel city={city} places={places} />
-
       <header className="header-elevated sticky top-0 z-10 bg-primary px-4 pb-3 pt-6 text-on-primary">
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3">
@@ -122,6 +120,8 @@ export default function CityPage() {
           </div>
         )}
       </header>
+
+      <CityPhotoGallery city={city} places={places} />
 
       <main className="px-4 py-5">
         {availableSections.length === 0 ? (
