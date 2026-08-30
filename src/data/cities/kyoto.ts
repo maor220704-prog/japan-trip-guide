@@ -1,4 +1,14 @@
 import type { CityContent } from "../../types";
+import cityImg from "../../assets/images/kyoto.webp";
+import fushimiInariImg from "../../assets/images/kyoto-fushimi-inari-taisha.webp";
+import kinkakujiImg from "../../assets/images/kyoto-kinkaku-ji.webp";
+import kiyomizuImg from "../../assets/images/kyoto-kiyomizu-dera.webp";
+import nijoCastleImg from "../../assets/images/kyoto-nijo-castle.webp";
+import bambooGroveImg from "../../assets/images/kyoto-arashiyama-bamboo-grove.webp";
+import philosophersPathImg from "../../assets/images/kyoto-philosophers-path.webp";
+import kamogawaImg from "../../assets/images/kyoto-kamogawa-river.webp";
+import nishikiMarketImg from "../../assets/images/kyoto-nishiki-market.webp";
+import gionImg from "../../assets/images/kyoto-gion-hanamikoji.webp";
 
 export const kyoto: CityContent = {
   city: {
@@ -6,6 +16,7 @@ export const kyoto: CityContent = {
     name: "קיוטו",
     generalInfo:
       "קיוטו פרושה בעמק שטוח החסום בהרים משלושה צדדים, עם רשת רחובות מלבנית שהועתקה מהעיר הסינית צ'אנגאן כבר בסוף המאה ה-8 - ומכאן גם שמה, שפירושו המילולי 'עיר הבירה'. היא שימשה בירתה הקיסרית של יפן ברציפות מ-794 עד 1868, ולכן מרוכזים בה יותר מ-1,600 מקדשים בודהיסטים ומאות מקדשי שינטו, לצד רבעי גיישות היסטוריים ששרדו כמעט ללא פגע גם בהפצצות מלחמת העולם השנייה. הייחוד שלה הוא השילוב הנדיר בין עיר מודרנית פועמת לבין מרקם עתיק שנשמר בכוונה תחילה.",
+    image: cityImg,
   },
   places: [
     // Attractions
@@ -17,6 +28,7 @@ export const kyoto: CityContent = {
       nameLatin: "Fushimi Inari Taisha",
       description:
         "מקדש שינטו שנוסד בשנת 711, עוד לפני שקיוטו הפכה לבירה, ומוקדש לאינארי, אלת האורז והשגשוג העסקי. אלפי שערי טוריי כתומים, שכל אחד נתרם על ידי עסק כתפילה להצלחה, יוצרים מנהרה נמשכת שמטפסת לאורך כל הר אינארי.",
+      image: fushimiInariImg,
       infoUrl: "https://www.japan.travel/en/spot/1128/",
       sources: ["https://www.japan.travel/en/spot/1128/"],
     },
@@ -28,6 +40,7 @@ export const kyoto: CityContent = {
       nameLatin: "Kinkaku-ji (Golden Pavilion)",
       description:
         "ביתן זהב תלת-קומתי שהוקם במקור ב-1397 כווילה של השוגון אשיקגה יושימיצו, נשרף כליל ב-1950 בידי נזיר צעיר ונבנה מחדש ב-1955 עם ציפוי זהב עבה אף יותר מהמקור. השתקפותו באגם הנייח הפכה אותו לאחד הסמלים הצילומיים המזוהים ביותר עם יפן.",
+      image: kinkakujiImg,
       infoUrl: "https://www.japan-guide.com/e/e3908.html",
       sources: ["https://www.japan-guide.com/e/e3908.html"],
     },
@@ -39,6 +52,7 @@ export const kyoto: CityContent = {
       nameLatin: "Kiyomizu-dera",
       description:
         "מקדש שנוסד ב-778 הידוע בבמת העץ הענקית שלו, הבנויה על 139 עמודי עץ ללא שימוש במסמר אחד בשיטת חיבורים יפנית מסורתית שסופגת רעידות אדמה. הבמה מתנשאת 13 מטרים מעל קרקעית הגיא ומציעה נוף פתוח על גבעות היגאשיאמה.",
+      image: kiyomizuImg,
       infoUrl: "http://www.kiyomizudera.or.jp/en/learn/",
       sources: ["http://www.kiyomizudera.or.jp/en/learn/"],
     },
@@ -50,6 +64,7 @@ export const kyoto: CityContent = {
       nameLatin: "Nijo Castle (Nijo-jo)",
       description:
         "טירה שנבנתה ב-1603 כמעון הקיוטואי של השוגון טוקוגאווה אייאסו, ושימשה זירת הכניעה הרשמית של השלטון הצבאי לקיסר ב-1867. מסדרונות ארמון נינומארו החלולים מתחתם מייצרים חריקה מכוונת בעת הליכה - 'רצפת הזמיר' שנועדה להתריע מפני מתנקשים.",
+      image: nijoCastleImg,
       infoUrl: "https://kyoto.travel/en/destinations/nijojo-castle/",
       sources: ["https://kyoto.travel/en/destinations/nijojo-castle/"],
     },
@@ -63,6 +78,7 @@ export const kyoto: CityContent = {
       nameLatin: "Arashiyama Bamboo Grove (Sagano)",
       description:
         "שביל הליכה קצר החוצה חורש במבוק צפוף שהיה חלק משטחי מקדש טנריו-ג'י, באזור ששימש מקום נופש לאצולת קיוטו כבר בתקופת הייאן. האור המסונן דרך הגבעולים הגבוהים והרשרוש ברוח יוצרים אווירה שונה לחלוטין מיתר העיר.",
+      image: bambooGroveImg,
       infoUrl: "https://www.japan-guide.com/e/e3912.html",
       sources: ["https://www.japan-guide.com/e/e3912.html"],
     },
@@ -74,6 +90,7 @@ export const kyoto: CityContent = {
       nameLatin: "Philosopher's Path (Tetsugaku no Michi)",
       description:
         "שביל אבן לאורך תעלת מים בת כשני קילומטרים בין גינקאקו-ג'י לננזן-ג'י, שנפתח ב-1890 ונקרא על שם הפילוסוף ניצ'ידה קיטארו, שנהג לצעוד בו מדי יום בדרך לאוניברסיטת קיוטו. מאות עצי הדובדבן לאורכו מלבלבים באפריל, אך גם שאר השנה זהו הליכה נעימה ושקטה לאורך מקדשים קטנים.",
+      image: philosophersPathImg,
       infoUrl: "https://www.japan-guide.com/e/e3906.html",
       sources: ["https://www.japan-guide.com/e/e3906.html"],
     },
@@ -85,6 +102,7 @@ export const kyoto: CityContent = {
       nameLatin: "Kamo River (Kamogawa)",
       description:
         "נהר החוצה את מרכז קיוטו מצפון לדרום, עם שבילי הליכה ורוכבי אופניים לאורך שתי גדותיו וסככות עץ שממסעדות פונטוצ'ו פותחות מעליו בקיץ. שעת השקיעה, כשהאורות הראשונים נדלקים בגיון הסמוכה, נחשבת לזמן היפה ביותר לבקר בו.",
+      image: kamogawaImg,
       infoUrl: "https://www.insidekyoto.com/kamo-gawa-riverside",
       sources: ["https://www.insidekyoto.com/kamo-gawa-riverside"],
     },
@@ -98,6 +116,7 @@ export const kyoto: CityContent = {
       nameLatin: "Nishiki Market",
       description:
         "שוק מקורה בן חמישה רחובות שהוקם רשמית ב-1615 כשוק הדגים של קיוטו, ומכונה עד היום 'המטבח של קיוטו' בזכות מעל מאה דוכנים המוכרים חמוקים, טופו, כבושים ומאכלי רחוב מסורתיים. מי התהום הקרים באזור אפשרו לשמר מזון טרי עוד לפני עידן הקירור.",
+      image: nishikiMarketImg,
       infoUrl: "https://www.kyoto-nishiki.or.jp/en/about/",
       sources: ["https://www.kyoto-nishiki.or.jp/en/about/", "https://kyoto.travel/en/destinations/kyoto-nishiki-food-market/"],
     },
@@ -111,6 +130,7 @@ export const kyoto: CityContent = {
       nameLatin: "Gion & Hanami-koji Street",
       description:
         "רובע הבתי-תה ההיסטורי של קיוטו, שבו עדיין פועלות גיישות ומיישות (geiko ו-maiko) המבצעות טקסי בידור מסורתיים בבתי-תה פרטיים. רחוב הנמי-קוג'י הראשי, עם בתי העץ המסורתיים לאורכו, פתוח לצילום חופשי, אך זהו רובע מגורים ועבודה חי - לא תפאורה.",
+      image: gionImg,
       infoUrl: "https://www.japan-guide.com/e/e3902.html",
       sources: ["https://www.japan-guide.com/e/e3902.html", "https://www.afar.com/magazine/kyotos-gion-district-bans-photographing-geisha-on-private-streets"],
     },
