@@ -1,4 +1,13 @@
 import type { CityContent } from "../../types";
+import cityImg from "../../assets/images/hakone.webp";
+import owakudaniImg from "../../assets/images/hakone-owakudani.webp";
+import openAirMuseumImg from "../../assets/images/hakone-open-air-museum.webp";
+import hakoneShrineImg from "../../assets/images/hakone-shrine.webp";
+import lakeAshiImg from "../../assets/images/hakone-lake-ashi.webp";
+import heiwaToriiImg from "../../assets/images/hakone-heiwa-no-torii-viewpoint.webp";
+import ropewayImg from "../../assets/images/hakone-ropeway-view.webp";
+import hakoneLoopImg from "../../assets/images/hakone-loop.webp";
+import kurotamagoImg from "../../assets/images/hakone-kurotamago-black-eggs.webp";
 
 export const hakone: CityContent = {
   city: {
@@ -6,6 +15,7 @@ export const hakone: CityContent = {
     name: "האקונה",
     generalInfo:
       "האקונה יושבת בתוך קלדרה געשית שנוצרה לפני כשלושת אלפים שנה, עם אגם אשי במרכזה ומעיינות חמים (אונסן) שנובעים מהקרקע הרותחת. אין דרך אחת לסובב בה - המסלול הקלאסי, המכונה 'לופ האקונה', משלב רכבת הרים, רכבל, תלת-רכבל וספינת אגם כדי לעבור בין האזורים. בתקופת אדו שימשה האקונה כתחנת פיקוח (סקישו) מרכזית בדרך הטוקאידו שבין אדו לקיוטו, ותפקידה זה עדיין ניכר בנקודות היסטוריות לאורך הדרך העתיקה. כיום היא ידועה בעיקר כיעד אונסן קלאסי ונקודת תצפית מבוקשת להר פוג'י, גם אם התצפית תלויה מזג אוויר.",
+    image: cityImg,
   },
   places: [
     {
@@ -16,6 +26,8 @@ export const hakone: CityContent = {
       nameLatin: "Owakudani",
       description:
         "עמק געשי שנוצר לפני כשלושת אלפים שנה בהתפרצות שיצרה את קלדרת האקונה, עם נביעות אדים גופרתיים פעילות עד היום. האתר ידוע גם בביצי הגופרית השחורות המבושלות במעיינות המקומיים, וגם כתחנה מרכזית ברכבל הפנורמי של האקונה.",
+      image: owakudaniImg,
+      infoUrl: "https://www.japan-guide.com/e/e5222.html",
       sources: [
         "https://www.japan-guide.com/e/e5222.html",
         "https://newsonjapan.com/article/125837.php",
@@ -29,6 +41,7 @@ export const hakone: CityContent = {
       nameLatin: "Hakone Open-Air Museum",
       description:
         "נפתח ב-1969 כמוזיאון החוצות הראשון ביפן, ומציג כמאה עשרים פסלים על שטח של כשבעים אלף מטרים רבועים בין הרים. הביתן הייעודי ליצירות פיקאסו ופסל הזכוכית הצבעונית של גבריאל לואר הופכים אותו לעצירה בולטת גם למי שאינו חובב אמנות.",
+      image: openAirMuseumImg,
       infoUrl: "https://www.hakone-oam.or.jp/en/",
       sources: ["https://www.hakone-oam.or.jp/en/"],
     },
@@ -40,6 +53,9 @@ export const hakone: CityContent = {
       nameLatin: "Hakone Jinja (Hakone Shrine)",
       description:
         "מקדש שינטו שנוסד בשנת 757 לספירה בין ארזי יפן עתיקים על גדות אגם אשי, ולאורך תקופת אדו נחשב לפטרון המטיילים בדרך הטוקאידו. שביל שערי טוריי אדומים מוביל מהיער אל שער הטוריי המפורסם העומד בתוך מי האגם.",
+      image: hakoneShrineImg,
+      infoUrl:
+        "https://www.japan.travel/national-parks/parks/fuji-hakone-izu/see-and-do/hakone-jinja-shrine/",
       sources: ["https://www.japan.travel/national-parks/parks/fuji-hakone-izu/see-and-do/hakone-jinja-shrine/"],
     },
     {
@@ -50,6 +66,8 @@ export const hakone: CityContent = {
       nameLatin: "Lake Ashi (Ashinoko)",
       description:
         "אגם קלדרה שנוצר לפני כשלושת אלפים שנה בהתפרצות שעיצבה את הרי האקונה, וכיום חוצות אותו ספינות תיירותיות מעוצבות כספינות פיראטים בין מוטו-האקונה לטוגנדאי. בימים בהירים ניתן לראות את הר פוג'י מעבר למים, אך העננות באזור ההררי חוסמת את הנוף לעיתים קרובות.",
+      image: lakeAshiImg,
+      infoUrl: "https://www.nippon.com/en/guide-to-japan/gu900157/",
       sources: ["https://www.nippon.com/en/guide-to-japan/gu900157/"],
     },
     {
@@ -60,7 +78,9 @@ export const hakone: CityContent = {
       nameLatin: "Heiwa no Torii (Peace Torii), Moto-Hakone lakeshore",
       description:
         "שער טוריי אדום שהוקם ב-1952 לרגל חתימת חוזה השלום של סן פרנסיסקו, וניצב חלקית בתוך מי אגם אשי מול שכונת מוטו-האקונה. הנקודה הזו היא אחת מתמונות הנוף המזוהות ביותר עם האקונה, ומצולמת גם מהחוף וגם מסיפון ספינות האגם.",
+      image: heiwaToriiImg,
       mapQuery: "Hakone Shrine Peace Torii Lake Ashi, Moto-Hakone, Kanagawa, Japan",
+      infoUrl: "https://www.kanpai-japan.com/hakone/hakone-jinja",
       sources: ["https://www.kanpai-japan.com/hakone/hakone-jinja"],
     },
     {
@@ -71,6 +91,9 @@ export const hakone: CityContent = {
       nameLatin: "Hakone Ropeway",
       description:
         "רכבל תלוי שמחבר את סואונזאן לטוגנדאי דרך תחנת אווקודאני, ונחשב לאחת מנקודות התצפית הטובות בהאקונה על העמק הגעשי המעשן ועל הרי האזור. פעילות הרכבל תלויה במזג האוויר וברמת הפעילות הוולקנית, ולעיתים מוחלף באוטובוס חלופי.",
+      image: ropewayImg,
+      infoUrl:
+        "https://www.japan.travel/national-parks/parks/fuji-hakone-izu/see-and-do/hakone-ropeway/",
       sources: ["https://www.japan.travel/national-parks/parks/fuji-hakone-izu/see-and-do/hakone-ropeway/"],
     },
     {
@@ -81,6 +104,8 @@ export const hakone: CityContent = {
       nameLatin: "Hakone Loop (Hakone Round Course)",
       description:
         "מסלול תיירותי מעגלי קלאסי שמשלב רכבת הרים, תלת-רכבל לסואונזאן, רכבל לטוגנדאי וספינת אגם בחזרה למוטו-האקונה - כל אמצעי תחבורה מציג נוף אחר של האזור ההררי. מדובר בדרך הנפוצה ביותר לראות את עיקר האתרים באזור ביום אחד, אך כל קטע תלוי בתנאי מזג אוויר ופעילות געשית.",
+      image: hakoneLoopImg,
+      infoUrl: "https://www.characrosstheworld.com/hakone-sightseeing-loop/",
       sources: [
         "https://www.characrosstheworld.com/hakone-sightseeing-loop/",
         "https://www.helenonherholidays.com/hakone-loop-clockwise/",
@@ -94,6 +119,9 @@ export const hakone: CityContent = {
       nameLatin: "Kuro-tamago (black eggs), Owakudani",
       description:
         "ביצי תרנגולת רגילות המבושלות במעיינות הגופרית של אווקודאני, כך שהגופרית והברזל במים צובעים את הקליפה בשחור פחם. מסורת מקומית טוענת שכל ביצה מוסיפה שבע שנות חיים, וזו אחת מחוויות הטעימה המזוהות ביותר עם האקונה. נמכרות במארזים בחנות שעל תחנת אווקודאני.",
+      image: kurotamagoImg,
+      infoUrl:
+        "https://www.tokyoweekender.com/travel/live-longer-with-help-from-the-black-eggs-of-hakones-hell-valley/",
       sources: [
         "https://www.tokyoweekender.com/travel/live-longer-with-help-from-the-black-eggs-of-hakones-hell-valley/",
         "https://en.japantravel.com/kanagawa/black-eggs-of-owakudani-hakone/1052",
@@ -118,6 +146,7 @@ export const hakone: CityContent = {
       nameLatin: "Yubadon Naokichi",
       description:
         "מסעדה קטנה בהאקונה-יומוטו שמתמחה ביובה (קרום טופו) המיוצר במי מעיין 'הימה נו מיזו' המקומיים, ומוגש בעיקר כקערת אורז יובאדון עם מרק דאשי וביצה. תור ארוך נוצר בסופי שבוע, כך שהגעה מוקדמת עוזרת.",
+      infoUrl: "https://www.hakonenavi.jp/international/en/spot/114",
       sources: [
         "https://www.tripadvisor.com/Restaurant_Review-g298171-d1702407-Reviews-Yubadonnaokichi-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kanto.html",
         "https://www.hakonenavi.jp/international/en/spot/114",
@@ -131,6 +160,7 @@ export const hakone: CityContent = {
       nameLatin: "Takeyabu Hakone Ten",
       description:
         "סניף בהאקונה של רשת סובה מוכרת מטוקיו, שמכינה אטריות כוסמת טריות מקמח מגידולי רמת קורוהימה. יושבת במוטו-האקונה עם נוף ירוק, ונחשבת לאחת ממסעדות הסובה המדורגות הגבוה ביותר באזור.",
+      infoUrl: "https://tabelog.com/en/kanagawa/A1410/A141001/14001257/",
       sources: [
         "https://tabelog.com/en/kanagawa/A1410/A141001/14001257/",
         "https://www.tripadvisor.com/Restaurant_Review-g298171-d1703761-Reviews-Takeyabu_Hakone-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kanto.html",
@@ -144,6 +174,7 @@ export const hakone: CityContent = {
       nameLatin: "Gora Brewery & Grill",
       description:
         "מסעדת בירה שכורה משלה שנפתחה ב-2017 באזור גורה בשיתוף עם מסעדן הסושי המפורסם נובו מטסוהיסה, ומגישה מנות בשר וחיתוכי צלייה לצד בירת קראפט המיוצרת ממי האקונה המקומיים. אולם התקרה הגבוהה ואבן הגינה שמעל המטבח הפתוח נותנים לה אופי ייחודי בהשוואה למסעדות הסביבה.",
+      infoUrl: "https://tabelog.com/en/kanagawa/A1410/A141001/14067843/",
       sources: [
         "https://tabelog.com/en/kanagawa/A1410/A141001/14067843/",
         "https://www.tripadvisor.com/Restaurant_Review-g298171-d12708659-Reviews-GORA_BREWERY_GRILL-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kanto.html",
@@ -157,6 +188,7 @@ export const hakone: CityContent = {
       nameLatin: "Bakery & Table Hakone",
       description:
         "מאפייה ובית קפה בני שלוש קומות ליד רציף מוטו-הקונה, עם חלונות זכוכית מהרצפה עד התקרה הצופים לאגם אשי ולשער הטוריי האדום. בקומת הקרקע יש מרפסת אמבט רגליים חמה שבה אפשר לשקוע כפות רגליים במי אונסן תוך כדי אכילת לחם.",
+      infoUrl: "https://tabelog.com/en/kanagawa/A1410/A141001/14051671/",
       sources: [
         "https://www.tripadvisor.com/Restaurant_Review-g298171-d4923891-Reviews-Bakery_Table_Hakone-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kanto.html",
         "https://tabelog.com/en/kanagawa/A1410/A141001/14051671/",
@@ -170,6 +202,7 @@ export const hakone: CityContent = {
       nameLatin: "Hatsuhana Soba Honten",
       description:
         "מסעדת סובה ותיקה סמוך לתחנת האקונה-יומוטו, הידועה בעיקר בסובה טורורו (עם יאם מגורר) ובאטריות המוכנות ללא מים, רק מקמח כוסמת, ביצים ואורז טבעי. תור נוצר לעיתים קרובות בשעות השיא, במיוחד בסופי שבוע.",
+      infoUrl: "https://tabelog.com/en/kanagawa/A1410/A141001/14002450/",
       sources: [
         "https://www.tripadvisor.com/Restaurant_Review-g298171-d1665010-Reviews-Hatsuhana_Soba_Honten-Hakone_machi_Ashigarashimo_gun_Kanagawa_Prefecture_Kanto.html",
         "https://tabelog.com/en/kanagawa/A1410/A141001/14002450/",
