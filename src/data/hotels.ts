@@ -12,6 +12,14 @@ export interface Hotel {
   checkIn: string;
   checkOut: string;
   bookingUrl: string;
+  address?: string;
+  /**
+   * In Japan, navigation (car nav systems and often Google Maps too) is
+   * commonly done by the destination's phone number rather than its address,
+   * since Japanese addresses are hierarchical and less GPS-precise - see
+   * `buildHotelMapsUrl` in Hotels.tsx.
+   */
+  phone?: string;
 }
 
 /** In itinerary order: Osaka -> Kyoto -> Fuji -> Hakone -> Tokyo. */

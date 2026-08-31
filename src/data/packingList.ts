@@ -2,11 +2,12 @@ import type { CityId } from "../types";
 
 /**
  * Climate-aware packing checklist. Every claim about climate/weather here is
- * general, documented seasonal knowledge for late September-mid October
- * (this trip has no fixed per-city date breakdown - only a departure date of
- * 26/9 and the city order - so the whole trip is treated as one broad
- * seasonal window rather than per-city calendar dates). No item was invented
- * to pad out a list.
+ * general, documented seasonal knowledge for late September-mid October -
+ * researched before exact per-city dates were known, so it stays general
+ * rather than claiming day-precision the research never had. Per-city
+ * `dates` fields now reflect the real hotel check-in/check-out dates (see
+ * `src/data/hotels.ts`, the source of truth for exact dates). No item was
+ * invented to pad out a list.
  *
  * `id` is the localStorage key for each item's checked state - once shipped,
  * ids must stay stable. Never reuse or reassign an id to a different item.
@@ -83,7 +84,7 @@ export const baseItems: PackingItem[] = [
 export const cityPackingSections: CityPackingSection[] = [
   {
     cityId: "osaka",
-    dates: "תחנה 1 במסלול",
+    dates: "28.9 – 1.10",
     weather:
       "חם ולח - כ-25-29 מעלות ביום ויורד ל-15-23 עד אמצע אוקטובר. ספטמבר הוא סוף עונת הטייפונים ביפן (החודש הפעיל ביותר), אוקטובר רגוע יותר.",
     items: [
@@ -101,7 +102,7 @@ export const cityPackingSections: CityPackingSection[] = [
   },
   {
     cityId: "kyoto",
-    dates: "תחנה 2 במסלול",
+    dates: "1.10 – 4.10",
     weather:
       "כ-22-28 מעלות ביום, יורד ל-13-18 בלילה עד אמצע אוקטובר - עדיין לח יחסית בתחילת החלון, עם סיכון גשם משיירי עונת הטייפונים.",
     items: [
@@ -119,7 +120,7 @@ export const cityPackingSections: CityPackingSection[] = [
   },
   {
     cityId: "fuji",
-    dates: "תחנה 3 במסלול",
+    dates: "4.10 – 5.10",
     weather:
       "קריר משמעותית מאוסקה/קיוטו/טוקיו בגלל הגובה - כ-17-20 מעלות ביום ויורד לאמצע העשרה עד סוף אוקטובר, עם בקרים וערבים קרים בהרבה (כ-10-12 מעלות בתחילת החלון, 7-8 בסופו). גשם משמעותי - כ-236 מ\"מ באוקטובר על פני כ-15 ימי גשם.",
     items: [
@@ -141,7 +142,7 @@ export const cityPackingSections: CityPackingSection[] = [
   },
   {
     cityId: "hakone",
-    dates: "תחנה 4 במסלול",
+    dates: "5.10 – 7.10",
     weather:
       "קריר ורטוב יותר מכל שאר המסלול בגלל הגובה - כ-19-28 מעלות בתחילת החלון ויורד ל-13-23 עד אמצע אוקטובר, עם בקרים וערבים קרים בהרים. כ-6-7 ימי גשם בחודש, וערפל הרים שמסתיר לעיתים קרובות את הנוף מהאגם והרכבל בלי קשר לעונה.",
     items: [
@@ -159,7 +160,7 @@ export const cityPackingSections: CityPackingSection[] = [
   },
   {
     cityId: "tokyo",
-    dates: "תחנה 5 במסלול",
+    dates: "7.10 – 14.10",
     weather:
       "כ-20-27 מעלות ביום, מתקרר בהדרגה לאורך אוקטובר, לח במיוחד בתחילת החלון. ספטמבר הוא החודש הפעיל ביותר מבחינת טייפונים שעלולים לפגוע ביפן עצמה.",
     items: [

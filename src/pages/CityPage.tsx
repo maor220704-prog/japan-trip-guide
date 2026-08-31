@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { cities } from "../data/cities";
 import { placesByCity, warningsByCity } from "../data/cities/index";
+import { hotels } from "../data/hotels";
 import { isCityId, type Category, type CityId } from "../types";
 import Icon from "../components/Icon";
 import PlaceCard from "../components/PlaceCard";
@@ -62,6 +63,7 @@ export default function CityPage() {
     : availableSections[0]?.key ?? null;
 
   const current = availableSections.find((s) => s.key === currentTab);
+  const hotel = validId ? hotels.find((h) => h.cityId === validId) : undefined;
 
   // Switching tabs should show the new list from its top, not wherever the
   // page happened to be scrolled to in the previous tab.
@@ -92,7 +94,14 @@ export default function CityPage() {
             >
               <Icon name="arrow_forward" />
             </Link>
-            <h1 className="text-xl font-bold">{city.name}</h1>
+            <div>
+              <h1 className="text-xl font-bold">{city.name}</h1>
+              {hotel && (
+                <p dir="ltr" className="text-right text-xs text-on-primary/70">
+                  {hotel.checkIn} – {hotel.checkOut}
+                </p>
+              )}
+            </div>
           </div>
 
           {/* Bottom NavBar is hidden on city pages, so this is the only way

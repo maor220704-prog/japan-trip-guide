@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import { cities } from "../data/cities";
+import { hotels } from "../data/hotels";
 
 export default function CityList() {
+  const datesFor = (cityId: string) => {
+    const hotel = hotels.find((h) => h.cityId === cityId);
+    return hotel ? `${hotel.checkIn} – ${hotel.checkOut}` : undefined;
+  };
+
   return (
     <div className="min-h-screen bg-background pb-24">
       <header className="header-elevated sticky top-0 z-10 bg-background px-4 pb-4 pt-6">
@@ -18,11 +24,18 @@ export default function CityList() {
             to={`/city/${city.id}`}
             className="overflow-hidden rounded-xl bg-surface shadow-[0_8px_20px_-4px_rgba(115,121,113,0.15)] transition-transform active:scale-95"
           >
-            <div className="flex items-center gap-3 p-3">
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-container text-sm font-bold text-on-primary-container">
-                {i + 1}
-              </span>
-              <h2 className="font-semibold text-on-surface">{city.name}</h2>
+            <div className="flex items-center justify-between gap-3 p-3">
+              <div className="flex items-center gap-3">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-container text-sm font-bold text-on-primary-container">
+                  {i + 1}
+                </span>
+                <h2 className="font-semibold text-on-surface">{city.name}</h2>
+              </div>
+              {datesFor(city.id) && (
+                <span dir="ltr" className="shrink-0 text-xs text-on-surface-variant">
+                  {datesFor(city.id)}
+                </span>
+              )}
             </div>
             {city.image && (
               <img src={city.image} alt={city.name} className="h-auto w-full" />
