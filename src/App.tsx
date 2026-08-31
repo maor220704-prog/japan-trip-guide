@@ -3,6 +3,7 @@ import CityList from "./pages/CityList";
 import CityPage from "./pages/CityPage";
 import Dictionary from "./pages/Dictionary";
 import PackingList from "./pages/PackingList";
+import Hotels from "./pages/Hotels";
 import NotFound from "./pages/NotFound";
 import NavBar from "./components/NavBar";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/city/:cityId" element={<CityPage />} />
           <Route path="/dictionary" element={<Dictionary />} />
           <Route path="/packing" element={<PackingList />} />
+          <Route path="/hotels" element={<Hotels />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ErrorBoundary>
